@@ -1,0 +1,15 @@
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.csproj.AssemblyReference.cache
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.AssemblyInfoInputs.cache
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.AssemblyInfo.cs
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.csproj.CoreCompileInputs.cache
+D:\Coding\C#\Lesson1\task2\bin\Debug\net6.0\task2.exe
+D:\Coding\C#\Lesson1\task2\bin\Debug\net6.0\task2.deps.json
+D:\Coding\C#\Lesson1\task2\bin\Debug\net6.0\task2.runtimeconfig.json
+D:\Coding\C#\Lesson1\task2\bin\Debug\net6.0\task2.dll
+D:\Coding\C#\Lesson1\task2\bin\Debug\net6.0\task2.pdb
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.dll
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\refint\task2.dll
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.pdb
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\task2.genruntimeconfig.cache
+D:\Coding\C#\Lesson1\task2\obj\Debug\net6.0\ref\task2.dll
