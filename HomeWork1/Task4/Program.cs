@@ -14,11 +14,11 @@ int number1;
 number1 = number("Введите целое число ");  
 if(number1 > 0) 
 { 
-    int i = 1;
+    int i = 2;
     while(i < number1)
     {
-        if(i % 2 == 0) Console.WriteLine($"Число {i} - четное");
-        i++;
+        Console.WriteLine($"Число {i} - четное");
+        i = i + 2;
     }
 }
 else
@@ -26,7 +26,7 @@ else
     int i = 0;
     while(i > number1)
     {
-        if(i % 2 == 0) Console.WriteLine($"Число {i} - четное");
-        i = i - 1;
+        Console.WriteLine($"Число {i} - четное");
+        i = i - 2;
     }
 }
