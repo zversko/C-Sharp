@@ -53,8 +53,8 @@ int[] InputArray1()
     {
         while(index < digitCount)
         {
-            array[digitCount - index - 1] = NatNum % 10;
-            NatNum = NatNum / 10;
+           array[digitCount - index - 1] = NatNum % 10;
+           NatNum = NatNum / 10;
             index++;
         }
         Console.WriteLine($"Второй элемент числа = {array[1]}");
@@ -131,7 +131,3 @@ int Day()
 
 int Task = InputNum();
 int Q = Questions(Task);
-
-
-
-
