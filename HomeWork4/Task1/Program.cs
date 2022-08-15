@@ -13,9 +13,28 @@ int number(string message)
 double MathPow(int a, int b)
 {
     double MP = 1;
-    for (int i = 0; i < b; i++)
+    if (b == 0)
     {
-        MP = MP * a;
+        MP = 1;
+    }
+    else
+    {
+        if (b > 0)
+        {
+            for (int i = 0; i < b; i++)
+            {
+                MP = MP * a;
+            }
+        }
+        else
+        {
+            for (int i = 0; b < i; i--)
+            {
+                MP = MP * a;
+            }
+            MP = 1 / MP;
+        }
+
     }
     return MP;
 }
@@ -29,8 +48,15 @@ void Main()
 {
     int num1 = number("Введите число, которое надо возвести в степень ");
     int num2 = number("Введите степень, в которую надо возвести число ");
-    double MP = MathPow(num1, num2);
-    PrintNumbers(num1, num2, MP);
+    if (num1 == 0 && num2 < 0)
+    {
+        Console.WriteLine("На ноль делить нельзя");
+    }
+    else
+    {
+        double MP = MathPow(num1, num2);
+        PrintNumbers(num1, num2, MP);
+    }
 }
 
 Main();
