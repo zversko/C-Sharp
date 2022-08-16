@@ -6,7 +6,7 @@ int[] RandomArray(int Length)
     int index = 0;
     while(index < array.Length)
     {
-        array[index] = new Random().Next(0,100);
+        array[index] = new Random().Next(7,10);
         index++;
     }
     return array;
@@ -21,9 +21,14 @@ void PrintArray(int[] a)
         Console.Write($"{a[i]}  ");
         i++;
     }
-    int max1 = 0; 
-    int max2 = 0;
-    for(i = 0; i < count; i++)
+}
+
+void PrintMax(int[] a)
+{
+    int count = a.Length;
+    int max1 = a[0]; 
+    int max2 = a[0];
+    for(int i = 0; i < count; i++)
     {
         if (a[i] > max1) 
         {
@@ -36,4 +41,6 @@ void PrintArray(int[] a)
     Console.Write($"Первый максимум - {max1} ; Второй максимум - {max2}");
 }
 
-PrintArray(RandomArray(8));
+int[] array = RandomArray(8);
+PrintArray(array);
+PrintMax(array);
