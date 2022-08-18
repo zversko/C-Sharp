@@ -6,7 +6,7 @@ int[] RandomArray(int Length)
     int index = 0;
     while(index < array.Length)
     {
-        array[index] = new Random().Next(0,100);
+        array[index] = new Random().Next(6,9);
         index++;
     }
     return array;
@@ -15,8 +15,8 @@ int[] RandomArray(int Length)
 int FindTwoMax(int[] a)
 {
     int count = a.Length;
-    int max1 = 0; 
-    int max2 = 0;
+    int max1 = a[0] - a[1] - a[2]; 
+    int max2 = a[0] - a[1] - a[2];
     for(int i = 0; i < count; i++)
     {
         if (a[i] > max1) 
