@@ -8,7 +8,7 @@ int[] RandomArray(int Length)
     int index = 0;
     while (index < array.Length)
     {
-        array[index] = new Random().Next(-10, 0);
+        array[index] = new Random().Next(0, 10);
         index++;
     }
     return array;
