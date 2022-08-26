@@ -33,7 +33,7 @@ void RandomMatrix(int[,] matrix)
     }
 }
 
-int MaximumRows(int[,] matrix)
+int SumMaximumRows(int[,] matrix)
 {
     int sum = 0; 
     int[] a = new int[matrix.GetLength(0)];
@@ -47,13 +47,12 @@ int MaximumRows(int[,] matrix)
                 max = matrix[rows, columns];
             }    
         }
-        Console.Write($"Max={max} ");
         sum += max;
     }
     return sum;
 }
 
-int MinimumColumns(int[,] matrix)
+int SumMinimumColumns(int[,] matrix)
 {
     int sum = 0;
     int[] a = new int[matrix.GetLength(1)];
@@ -67,7 +66,6 @@ int MinimumColumns(int[,] matrix)
                 min = matrix[rows, columns];
             }
         }
-        Console.Write($"Min={min} ");
         sum += min;
     }
     return sum;
@@ -77,20 +75,17 @@ void Main()
 {
     int rows = InputNumber("Укажите количество строк - ");
     int columns = InputNumber("Укажите количество столбцов - ");
+    Console.WriteLine();
     int[,] matrix = new int[rows, columns];
     RandomMatrix(matrix);
     PrintMatrix(matrix);
-    Console.WriteLine();
-    Console.WriteLine("Строки");
-    int maxrows = MaximumRows(matrix);
-    Console.WriteLine();
-    Console.WriteLine("Столбцы");
-    int mincolumns = MinimumColumns(matrix);
-    Console.WriteLine();
+    int maxrows = SumMaximumRows(matrix);
+    int mincolumns = SumMinimumColumns(matrix);
     Console.WriteLine();
     Console.WriteLine($"Сумма максимумов среди строк = {maxrows}");
     Console.WriteLine($"Сумма минимумов среди столбцов = {mincolumns}");
     Console.WriteLine($"Разница между суммами равна = {maxrows - mincolumns}");
+    Console.WriteLine();
 }
 
 Main();
