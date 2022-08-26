@@ -36,7 +36,6 @@ void RandomMatrix(int[,] matrix)
 int SumMaximumRows(int[,] matrix)
 {
     int sum = 0; 
-    int[] a = new int[matrix.GetLength(0)];
     for (int rows = 0; rows < matrix.GetLength(0); rows++)
     {
         int max = matrix[rows, 0];
@@ -55,7 +54,6 @@ int SumMaximumRows(int[,] matrix)
 int SumMinimumColumns(int[,] matrix)
 {
     int sum = 0;
-    int[] a = new int[matrix.GetLength(1)];
     for (int columns = 0; columns < matrix.GetLength(1); columns++)
     {
         int min = matrix[0, columns];
