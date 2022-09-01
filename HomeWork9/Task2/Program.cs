@@ -26,7 +26,7 @@ void Main()
     int M = InputNumber("Введите второе число > ");
     if (N < M) 
     {
-        int sum =   SumNaturalNum(N, M);
+        int sum = SumNaturalNum(N, M);
         System.Console.WriteLine(sum);
     }
     else
